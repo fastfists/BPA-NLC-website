@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block header %}
+  <div class="jumbotron text-center">
+    <h1>Welcome to BPA: Buisness Professionals of America</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi saepe cumque expedita aut. Hic placeat assumenda necessitatibus excepturi nam tempore a nihil! Est delectus laudantium temporibus eligendi adipisci odit ab?</p>
+  </div>
+{%endblock header %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+      <video autoplay="autoplay" align="center">
+        <!-- From offical bpa website-->
+        <source type="video/mp4" src="http://www.bpa.org/members/1/pics/memberHeader.mp4">
+      </video>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="https://www.usd259.org/cms/lib/KS01906405/Centricity/Domain/2949/Business%20Professionals%20of%20America%20BPA.jpg" height="286" alt="" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">BPA</h3>
+            <p class="card-text">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="http://www.bpa.org/members/1/pics/NLCWebLogo.fw.png" alt="Card image cap" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> NLC </h3>
+            <p class="card-text">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock body %}
