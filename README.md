@@ -12,6 +12,7 @@ Install from source
 ```bash
 git clone https://github.com/fastfists/Bpa-Website-Design.git
 cd BPA-NLC-website/
+env/Scripts/activate
 pip install -r requirements.txt
 python run.py
 ```
