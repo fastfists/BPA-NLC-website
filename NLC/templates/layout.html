@@ -18,20 +18,17 @@
     <div id="body-header">
         {% block header %} header here {% endblock header %}
     </div>
-    <main role="main">
+    <main class=container role="main">
         <div class="row">
-            <div class="col-md-1">
-                {% include 'includes/_social_bar.html'%}
-            </div>
-            <div class="container">
+
                 <div id=main-body class="col-md-8">
                     {% block body%} {% endblock %}
                 </div>
                 <div class="col-md-4">
                     <div class="content-section">
-                        <!-- Side bar -->
+                        <h1>This is the side Bar</h1>
                     </div>
-                </div>
+
             </div>
         </div>
     </main>
