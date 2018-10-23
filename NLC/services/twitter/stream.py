@@ -1,12 +1,17 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-import creditionals
+from os import environ
+
+CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET = None, None, None, None
+config_vars = ["CONSUMER_KEY", "CONSUMER_SECRET", "ACCESS_TOKEN", "ACCESS_TOKEN_SECRET"]
+for var in config_vars:
+    exec(f"{var} = environ[var]")
 
 def authenticate_app():
     
-    auth = OAuthHandler(creditionals.CONSUMER_KEY, creditionals.CONSUMER_SECRET)
-    auth.set_access_token(creditionals.ACCESS_TOKEN, creditionals.ACCESS_TOKEN_SECRET)
+    auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     return auth
 
 class StdOutListener(StreamListener):
@@ -22,6 +27,6 @@ if __name__ == '__main__':
 
     listener = StdOutListener()
 
-    stream = Stream(auth, listener)
+    stream = Stream(authenticate_app(), listener)
 
-    stream.filter(track=["donald trump", "hillary clinton", "barak obama"])
+    stream.filter(track=["#BPA"])
