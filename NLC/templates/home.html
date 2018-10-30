@@ -10,10 +10,13 @@
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
   <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#"> {{name}} </a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
 </div>
 {% endblock body %}
+
+{% block sidebar %}
+<h5> Twitter Feed:
+  {% for post in posts %}
+  
+  {% endfor %}
+</h5>
+{% endblock %}
