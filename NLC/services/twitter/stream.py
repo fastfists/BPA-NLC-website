@@ -23,7 +23,7 @@ class Stremaer:
 
     def __init__(self):
         stream = Stream(authenticate_app(), WebHookListener())
-        stream.filter(track=["#BPA"])
+        stream.filter(track=["#BPA"], is_async=True)
 
 
 class WebHookListener(StreamListener):
