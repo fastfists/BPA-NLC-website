@@ -19,11 +19,11 @@ def authenticate_app():
     return auth
 
 
-class Stremaer:
+class Streamer:
 
     def __init__(self):
         stream = Stream(authenticate_app(), WebHookListener())
-        stream.filter(track=["#BPA"], is_async=True)
+        stream.filter(track=["#BPA"])
 
 
 class WebHookListener(StreamListener):
@@ -38,19 +38,11 @@ class WebHookListener(StreamListener):
         pass
 
     def send(self):
-        info = list(twitter_posts)
-        requests.post(host_name+"/twitter/update", json={data:info})
+        info = list(self.twitter_posts)
+        requests.post(host_name+"/twitter/update", json={"data":info})
 
     def on_data(self, data):
-        twitter_posts.append(data)
+        self.twitter_posts.append(data)
         return True
 
-
-
-if __name__ == '__main__':
-
-    listener = StdOutListener()
-
-    stream = Stream(authenticate_app(), listener)
-
-    stream.filter(track=["#BPA"])
+Streamer()
