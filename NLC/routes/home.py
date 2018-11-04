@@ -14,3 +14,23 @@ def about():
 @home_bp.route('/template')
 def template():
     return render_template('layout.html', title="template")
+
+@home_bp.route('/about')
+def about():
+    return render_template('about.html', title="about_us")
+
+@home_bp.route('/transportation')
+def about():
+    return render_template('transportation.html', title="transportation")
+
+@home_bp.route('/attractions')
+def about():
+    return render_template('attractions.html', title="attractions")
+
+@home_bp.route('/maps')
+def about():
+    return render_template('maps.html', title="maps")
+
+@home_bp.route('/food')
+def about():
+    return render_template('food.html', title="food")
