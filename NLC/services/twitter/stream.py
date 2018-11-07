@@ -44,5 +44,3 @@ class WebHookListener(StreamListener):
     def on_data(self, data):
         self.twitter_posts.append(data)
         return True
-
-Streamer()

@@ -7,10 +7,6 @@ home_bp = Blueprint('home_bp', __name__, template_folder='templates', static_url
 def home():
     return render_template('home.html',name="dude")
 
-@home_bp.route('/about')
-def about():
-    return render_template('about.html', title="about")
-
 @home_bp.route('/template')
 def template():
     return render_template('layout.html', title="template")
@@ -20,17 +16,17 @@ def about():
     return render_template('about.html', title="about_us")
 
 @home_bp.route('/transportation')
-def about():
+def transportation():
     return render_template('transportation.html', title="transportation")
 
 @home_bp.route('/attractions')
-def about():
+def attractions():
     return render_template('attractions.html', title="attractions")
 
 @home_bp.route('/maps')
-def about():
+def maps():
     return render_template('maps.html', title="maps")
 
 @home_bp.route('/food')
-def about():
+def food():
     return render_template('food.html', title="food")
