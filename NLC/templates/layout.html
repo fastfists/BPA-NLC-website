@@ -19,18 +19,7 @@
 <body>
     {% include 'includes/_navbar.html' %}
     <main class=container role="main">
-        <div class="row">
-            <div id=main-body class="col-md-8">
-                {% block body%} {% endblock %}
-                <br><br>
-            </div>
-            <div class="col-md-4">
-                <div class="content-section">
-                    <h1>{% block sidebar %} {% endblock %}</h1>
-                </div>
-
-            </div>
-        </div>
+        {% block body%} {% endblock %}
     </main>
     <br><br>
     {% include 'includes/_footer.html' %}
