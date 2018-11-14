@@ -1,11 +1,11 @@
-body{
-  background-color: rgb(255, 255, 255);
+
+footer{
+  background-color: rgb(201, 78, 78);
 }
 
-#main-body{
-  background-color: rgb(255, 255, 255);
+#main-body .content-section{
+  background-color: rgb(250, 250, 255);
 }
-
 .navbar{
   background-color: rgb(201, 78, 78);
 }
