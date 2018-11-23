@@ -7,6 +7,10 @@ home_bp = Blueprint('home_bp', __name__, template_folder='templates', static_url
 def home():
     return render_template('home.html',name="dude")
 
+@home_bp.route('/attire')
+def attire():
+    return render_template('attire.html', title="attire")
+
 @home_bp.route('/template')
 def template():
     return render_template('layout.html', title="template")
