@@ -1,47 +1,42 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+<div class="container-fluid">
   <a class="navbar-brand" href="/">
-    <img src="https://www.okcareertech.org/educators/business-marketing-and-information-technology-education/images-1/bpa-logo/image" alt="BPA" height=50>
+    <img class="" src="{{ url_for('static', filename='img/bpa-logo.gif') }}" alt="BPA" height="50">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navigation-bar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navigation-bar">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
-      </li>
+
+      
       <li class="nav-item">
         <a href="/attire" class="nav-link">Attire</a>
       </li>
-      </li>
+      
       <li class="nav-item">
         <a href="/transportation" class="nav-link">Transportation</a>
       </li>
-      </li>
+
       <li class="nav-item">
         <a href="/attractions" class="nav-link">Attractions</a>
       </li>
-      </li>
+
       <li class="nav-item">
         <a href="/maps" class="nav-link">Maps</a>
-      </li>
       </li>
       <li class="nav-item">
         <a href="/food" class="nav-link">Food</a>
       </li>
     </ul>
-    <ul class="navbar-nav justify-content-end">
-      <li class="nav-item">
-        <a href="/register" class="nav-link">Register</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.bpa.org" class="nav-link">Login</a>
-      </li>
-    </ul>
   </div>
+</div>
 </nav>

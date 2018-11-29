@@ -5,7 +5,6 @@ port = 5000
 
 def create_app() -> Flask:
     from . import routes
-    from .services import twitter
     app = Flask(__name__)
     routes.init_app(app)
     return app
