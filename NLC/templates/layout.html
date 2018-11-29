@@ -18,16 +18,16 @@
 
 <body>
     {% include 'includes/_navbar.html' %}
-    <main class=container role="main">
-        <div class="row">
-            <div class="col-md-11">
+    <div class="row">
+        <div class="col-md-10">
+            <main class="container" role="main">
                 {% block body%} {% endblock %}
-            </div>
-            <div class="col-md-1">  
-                {% include 'includes/_sidebar.html' %}
-            </div>
+            </main>
         </div>
-    </main>
+        <div class="col-md-2">
+            {% include 'includes/_sidebar.html' %}
+        </div>
+    </div>
     <br><br>
     {% include 'includes/_footer.html' %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
