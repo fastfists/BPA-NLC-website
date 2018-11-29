@@ -1,9 +1,8 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<br>
-<div class="row">
-    <div class="col-md-8">
+    <div class="row">
+    <div class="col-md-6">
         <div class="card">
             <div class="row">
                 <div class="col-md-5">
@@ -16,8 +15,8 @@
                             <b>Description:</b><br>
                             The Smithsonian offers a total of 19 museums, galleries, gardens, and zoo. Each with their own historic topic to provide a viewing pleasure that provide a magnificent viewing pleasure for all.
                         </p>
-                    </div>
                     <a href="https://www.si.edu/museums" class="btn btn-info" target="_blank">More Info</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,10 +39,8 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kTUhhev-WMmJPG7k93iKodXGWQN8plYI" width="640" height="480"></iframe>
     </div>
 </div>
-
-<a href="{{url_for('static', filename='img/Smithsonian_outside.jpg') }}" class="btn btn-primary"> Hi</a>
 {% endblock %}
