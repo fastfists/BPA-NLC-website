@@ -1,8 +1,5 @@
 footer{
   background-color: rgb(201, 78, 78);
-  position: absolute;
-    bottom: 0px;
-    width: 100%;
 }
 
 
@@ -22,10 +19,9 @@ footer{
 ul.vertical-nav-bar{
   position: relative;
   list-style-type: none;
-  margin: 0;
   padding: 0;
   width: 200px;
-  border-left: 1px solid black;  
+  border-left: 3px solid black;  
 }
 
 li.v-nav-item a{
