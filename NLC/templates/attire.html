@@ -1,17 +1,55 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 {% block body %}
-<div class="btn-group" role="group" aria-label="">
-    <button type="button" class="btn btn-primary"></button>
-    <button type="button" class="btn btn-primary"></button>
-    <button type="button" class="btn btn-primary"></button>
-</div>
+    <!-- Enter main html here -->
+    <h1> Attire </h1>
+    <p>In order to promote a professional atmosphere, BPA’s Board of Trustees has developed the following official dress code policy for the Business Professionals of America National Leadership Conference. Students, advisors and chaperones must follow the dress code. It is recommended that all guests follow established dress code policy.
+        Members not dressed in required attire will not be allowed to participate in any session or any competitive event. Members not adhering to the Professional Dress Code will not be allowed on stage.
+        Members refused entrance to an event will be given the opportunity to change into appropriate attire immediately and participate/compete in the event. Having changed into appropriate attire, the member will join testing in progress. No additional time will be given for time missed.
+        Members also have the right to grieve the issue immediately after being refused entrance. Grievance of the Dress Code policy will not be accepted if not received in writing at Competitive Events headquarters within 15 minutes of the infraction in question.
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="professional-dress">
+                <h3>
+                    Professional Dress Code
+                </h3>
+                <h4>Women</h4>
+                <ul id="women-dress-code">
+                    <li>Pant or skirt suit.</li>
+                    <li>Dress skirt or dress slacks with coordinated blouse and/or sweater.</li>
+                    <li>Buisness professional "dress."</li>
+                    <li>BPA blazer with dress skirt or dress slacks and blouse or sweater.</li>
+                    <li>Dress shoes or dress sandals with heel are required with all of the above.</li>
+                    <li>Skirt length may be no greater than two inches above the knee.</li>
+                    <li>This excludes all denim for any of the above.</li>
+                </ul>
+                <h4>Men</h4>
+                <ul id="men-dress-code">
+                    <li>Dress slacks, dress shirt, and tie.</li>
+                    <li>Suit, dress shirt, and tie.</li>
+                    <li>Sport coat, coordinated dress slacks, dress shirt, and tie.</li>
+                    <li>BPA blazer with dress slacks, dress shirt, and tie.</li>
+                    <li>Dress shoes and dress socks are required with all of the above.</li>
+                    <li>This excludes all denim for any of the above.   </li>
+                </ul>
+            </div>
 
-
-<ul>
-
-    <li>wtf</li>
-    <li>dude</li>
-    <li>I am a man</li>
-</ul>
-{% endblock body %}
+            <div class="col-md-6" id="casual-dress">
+                <h3>
+                    Casual Dress Code
+                </h3>
+                <h4>Women</h4>
+                <ul id="women-dress-code">
+                    <li>Sportswear (jeans), pants, and shirt, T-shirt, and shorts.</li>
+                    <li>Footwear required with all of the above.</li>
+                </ul>
+                <h4>Men</h4>
+                <ul id="men-dress-code">
+                    <li>Sportswear (jeans), pants and shirt, T-shirt, and shorts.</li>
+                    <li>Footwear required with all of the above.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
