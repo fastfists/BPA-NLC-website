@@ -2,11 +2,6 @@ from flask import Blueprint, render_template
 
 home_bp = Blueprint('home_bp', __name__, template_folder='templates', static_url_path='static')
 
-<<<<<<< HEAD
-
-@home_bp.route('/home')
-=======
->>>>>>> f5f0eca0a95ad16458e6736aa0ddcb4dc442fd65
 @home_bp.route('/')
 @home_bp.route('/home')
 def home():
@@ -23,9 +18,6 @@ def template():
 
 @home_bp.route('/about')
 def about():
-<<<<<<< HEAD
-    return render_template('about.html')
-=======
     return render_template('about.html', title="about_us")
 
 @home_bp.route('/transportation')
@@ -43,4 +35,3 @@ def maps():
 @home_bp.route('/food')
 def food():
     return render_template('food.html', title="food")
->>>>>>> f5f0eca0a95ad16458e6736aa0ddcb4dc442fd65
